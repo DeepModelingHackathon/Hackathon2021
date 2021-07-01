@@ -33,29 +33,29 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 #### [A1.探究原子邻域描述子的可解释性](#a1-interpretability-of-descriptors-in-deepmd-kit)
 
-#### A2.统计并抽取网络信息，实现模型压缩
+#### [A2.统计并抽取网络信息，实现模型压缩](#A2-Analysis-of-information-quantity-and-Model-compression-in-DeepMD-kit)
 
-#### A3.利用网络结构搜索（NAS）寻找最优模型
+#### [A3.利用网络结构搜索（NAS）寻找最优模型](#A3-Neural-Architecture-Search（NAS）in-energy/force-fitting)
 
 #### ...
 
 ### 高性能赛道：打磨物理建模之利刃，吹毫立断（编号H开头）
 
-#### H1.DeepMD-kit混合精度训练加速
+#### [H1.DeepMD-kit混合精度训练加速](#H1-Mixed-precision-training-in-DeepMD-kit)
 
-#### H2.Abacus近邻原子搜索优化
+#### [H2.Abacus近邻原子搜索优化](#H2-Improve-of-neighbor-atoms-searching-code-in-Abacus)
 
-#### H3.FEALPy高效组装单元矩阵
+#### [H3.FEALPy高效组装单元矩阵](#H3-Efficient-implementation-for-the-finite-element-local-assembly)
 
 #### ...
 
 ### 科学计算：将借物理建模之羽翼，直飞云空（编号S开头）
 
-#### S1.DeepMD-kit实现热导/扩散系数/径向分布函数计算工作流
+#### [S1.DeepMD-kit实现热导/扩散系数/径向分布函数计算工作流](#S1-Workflows-for-computing-physical-properties)
 
-#### S2.Abacus实现材料能带计算工作流
+#### [S2.Abacus实现材料能带计算工作流](#S2-Workflows-for-Abacus+Materials-Project-for-calculate-electric-bands)
 
-#### S3.FEALPy实现基于Bernstein多项式的有限元方法
+#### [S3.FEALPy实现基于Bernstein多项式的有限元方法](#S3-Finite-element-space-based-on-the-Bernstein-polynomial)
 
 #### ...
 
@@ -129,7 +129,7 @@ In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 <br>
 <br>
-### A3. Neural Architecture Search（NAS）in energy/force fitting.
+### A3. Neural Architecture Search（NAS）in energy/force fitting
 
 #### 维度：AI+DeepMD-kit+科研创新
 
@@ -171,7 +171,7 @@ With specific device and specific Tensorflow version, try to use the mixture of 
 3.***Note***：To ensure the accuracy of semi-precision training, attention should be paid to gradient explosion and gradient vanishing. In addition, be careful about the matrix dimension in semi-precision Tensor Core.
 <br>
 <br>
-### H2.Improve of neighbor atoms searching code in Abacus
+### H2. Improve of neighbor atoms searching code in Abacus
 #### 维度：高性能+Abacus+工程开发
 #### Background&Problem：
 1.DFT software calculation needs **truncation with radius cutoff**, efficient searching and fast traversing of other atoms around each atom is an important problem to improve the computational speed.
@@ -227,7 +227,7 @@ Design and develop a workflow using Apache airflow or aiida, or other workflow m
 <br>
 <br>
 
-### S2.Workflows for Abacus+Materials Project for calculate electric bands
+### S2. Workflows for Abacus+Materials Project for calculate electric bands
 #### 维度：科学计算+Abacus+工程开发
 #### Background&Problem:
 1.**Abacus** is accurate and effective DFT software to calculate material properties.
@@ -244,7 +244,7 @@ Developing a workflow to calculate **electric bands** with Abacus for at least 1
 <br>
 <br>
 
-### S3.Finite element space based on the Bernstein polynomial
+### S3. Finite element space based on the Bernstein polynomial
 #### 维度：科学计算+FEALPy+工程开发
 #### Background&Problem:
 1.In **FEALPy**, the basis functions of **Lagrange finite element space** defined on the simplex (interval, triangle or tetrahedron) meshes is constructed based on the **barycentric coordinates**, which does not need to introduce the reference element. Furthermore, they satisfy the interpolation property, that is, each basis function takes 1 at one of interpolation points and 0 at the other on each element.
