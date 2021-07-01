@@ -35,7 +35,7 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 #### [A2.统计并抽取网络信息，实现模型压缩](#A2-Analysis-of-information-quantity-and-Model-compression-in-DeepMD-kit)
 
-#### [A3.利用网络结构搜索（NAS）寻找最优模型](#A3-Neural-Architecture-Search（NAS）in-energy/force-fitting)
+#### [A3.利用网络结构搜索（NAS）寻找最优模型](#A3-Neural-Architecture-SearchNASin-energy/force-fitting)
 
 #### ...
 
@@ -53,7 +53,7 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 #### [S1.DeepMD-kit实现热导/扩散系数/径向分布函数计算工作流](#S1-Workflows-for-computing-physical-properties)
 
-#### [S2.Abacus实现材料能带计算工作流](#S2-Workflows-for-Abacus+Materials-Project-for-calculate-electric-bands)
+#### [S2.Abacus实现材料能带计算工作流](#S2-Workflows-for-AbacusMaterials-Project-for-calculate-electric-bands)
 
 #### [S3.FEALPy实现基于Bernstein多项式的有限元方法](#S3-Finite-element-space-based-on-the-Bernstein-polynomial)
 
