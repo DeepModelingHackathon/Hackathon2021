@@ -43,7 +43,7 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 #### [H1.DeepMD-kit混合精度训练加速](#H1-Mixed-precision-training-in-DeepMD-kit)
 
-#### [H2.Abacus近邻原子搜索优化](#H2-Improve-of-neighbor-atoms-searching-code-in-Abacus)
+#### [H2.ABACUS近邻原子搜索优化](#H2-Improve-the-algorithms-in-searching-for-neighboring-atoms)
 
 #### [H3.FEALPy高效组装单元矩阵](#H3-Efficient-implementation-for-the-finite-element-local-assembly)
 
@@ -53,7 +53,7 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 #### [S1.DeepMD-kit实现热导/扩散系数/径向分布函数计算工作流](#S1-Workflows-for-computing-physical-properties)
 
-#### [S2.Abacus实现材料能带计算工作流](#S2-Workflows-for-AbacusMaterials-Project-for-calculate-electric-bands)
+#### [S2.ABACUS实现材料能带计算工作流](#S2-Workflows-for-ABACUSMaterials-Project-for-calculating-band-gaps)
 
 #### [S3.FEALPy实现基于Bernstein多项式的有限元方法](#S3-Finite-element-space-based-on-the-Bernstein-polynomial)
 
@@ -171,24 +171,19 @@ With specific device and specific Tensorflow version, try to use the mixture of 
 3.***Note***：To ensure the accuracy of semi-precision training, attention should be paid to gradient explosion and gradient vanishing. In addition, be careful about the matrix dimension in semi-precision Tensor Core.
 <br>
 <br>
-### H2. Improve of neighbor atoms searching code in Abacus
-#### 维度：高性能+Abacus+工程开发
+### H2. Improve the algorithms in searching for neighboring atoms 
+#### 维度：高性能+ABACUS+工程开发
 #### Background&Problem：
-1.DFT software calculation needs **truncation with radius cutoff**, efficient searching and fast traversing of other atoms around each atom is an important problem to improve the computational speed.
+1.For **large-scale DFT calculations**, **ABACUS** adopts atomic orbitals with **strict radius cutoffs**, efficient searching and recording neighboring atoms is an essential procedure that has been implemented in ABACUS. The current algorithms in searching neighbors can be used for large systems, but **still has potentials to be further improved**.
 
-2.The existing neighbor searching code in **Abacus** adopts plenty of bit manipulations and is very efficient even up to millions of atoms.
-
-3.The existing neighbor searching code has many steps and we don’t know if the code of each step is efficient enough. 
 #### Goal: 
-1.Try to understand the existing code of searching neighbor atoms.(**write notes to show your comments**)
+1.Read and understand the algorithms for searching neighboring atoms.
 
-2.Try to **remove the BOOST math library**, and test efficiency of each step for target examples.
+2.Remove the dependence of the **Hash library** in **BOOST math library** by implementing your own algorithm or using the STL in C++. Ensure the new algorithm can work correctly and compare the efficiency of the new and old algorithms. 
 
-3.Try to **improve the efficiency** of codes.
+3.Try to improve the efficiency of searching neighbors.
 #### Possible solution：
-1.To achieve the best performance, you can **feel free to use MPI or openMP or CUDA** to accelerate.
-
-2.***Note***：you’d better don’t use code beyond c++11.
+1.Use **MPI, openMP or CUDA** to accelerate the efficiency of the code.
 <br>
 <br>
 
@@ -227,20 +222,20 @@ Design and develop a workflow using Apache airflow or aiida, or other workflow m
 <br>
 <br>
 
-### S2. Workflows for Abacus+Materials Project for calculate electric bands
-#### 维度：科学计算+Abacus+工程开发
+### S2. Workflows for ABACUS+Materials Project for calculating band gaps
+#### 维度：科学计算+ABACUS+工程开发
 #### Background&Problem:
-1.**Abacus** is accurate and effective DFT software to calculate material properties.
+1.**ABACUS** is a density functional theory software based on quantum mechanics, it can be used to predict properties of materials. It is a powerful tool to combine ABACUS with open database for materials, such as **Materials Project**.
 
-2.It is important to automatically and quickly compute the examples in the open material database.
 #### Goal: 
-Developing a workflow to calculate **electric bands** with Abacus for at least 100 structures downloaded in **Materials Project**. (**Compounds of III-V families elements and II-VI families elements is recommended.**)
+1.Developing a workflow to calculate **band gaps** of materials with ABACUS for **at least 100 structures** downloaded from the Materials Project. **(Compounds of III-V family elements and II-VI family elements are recommended.)**
+
 #### Possible solution：
-1.The input files example and key parameter setting would be listed.
+1.Examples including input files and explanations for key parameters **will be provided**.
 
-2.You can find Materials Project data in https://www.materialsproject.org/, and there is official API to get data from this database.
+2.The atomic structures and related information can be downloaded from the Materials Project (https://www.materialsproject.org/), and there is an official API to get data from this database.
 
-3.You can find some workflows examples in https://gitee.com/ShenZhenXiong/AseAbacusInterface/blob/master/AseAbacusV20200227/example/highflux/ase_abacus_highflux.py .
+3.You can find similar workflow examples on the website: https://gitee.com/ShenZhenXiong/AseAbacusInterface/blob/master/AseAbacusV20200227/example/highflux/ase_abacus_highflux.py
 <br>
 <br>
 
