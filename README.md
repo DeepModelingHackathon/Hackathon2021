@@ -65,7 +65,7 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 ## AI赛道：理解物理建模之智慧，洞若观火
 
-### A1 Interpretability of descriptors in DeepMD-kit
+### A1. Interpretability of descriptors in DeepMD-kit
 
 #### 维度：AI+DeepMD-kit+科研创新
 
