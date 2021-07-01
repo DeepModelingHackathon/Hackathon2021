@@ -43,7 +43,7 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 #### H1.DeepMD-kit混合精度训练加速
 
-#### H2.Abacus双中心积分加速
+#### H2.Abacus近邻原子搜索优化
 
 #### H3.FEALPy高效组装单元矩阵
 
@@ -53,11 +53,15 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 #### S1.DeepMD-kit实现热导/扩散系数/径向分布函数计算工作流
 
-#### S2.Abacus实现电子结构性质计算工作流设计
+#### S2.Abacus实现材料能带计算工作流
 
 #### S3.FEALPy实现基于Bernstein多项式的有限元方法
 
 #### ...
+
+### 注：题目细节要求及数据集将在7月11日最终确定
+<br>
+<br>
 
 ## AI赛道：理解物理建模之智慧，洞若观火
 
@@ -151,7 +155,7 @@ In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 
 ## 高性能赛道：打磨物理建模之利刃，吹毫立断
 ### H1. Mixed precision training in DeepMD-kit
-#### 维度：高性能+deepmd-kit+科研创新
+#### 维度：高性能+DeepMD-kit+科研创新
 #### Background&Problem：
 1.**Mixed precision training** is widely used in HPC. Under the premise of ensuring the output accuracy within a certain range, the training process can be accelerated by using **single precision** or **semi-precision**.
 
@@ -167,7 +171,24 @@ With specific device and specific Tensorflow version, try to use the mixture of 
 3.***Note***：To ensure the accuracy of semi-precision training, attention should be paid to gradient explosion and gradient vanishing. In addition, be careful about the matrix dimension in semi-precision Tensor Core.
 <br>
 <br>
-### H2.Abacus双中心积分加速
+### H2.Improve of neighbor atoms searching code in Abacus
+#### 维度：高性能+Abacus+工程开发
+#### Background&Problem：
+1.DFT software calculation needs **truncation with radius cutoff**, efficient searching and fast traversing of other atoms around each atom is an important problem to improve the computational speed.
+
+2.The existing neighbor searching code in **Abacus** adopts plenty of bit manipulations and is very efficient even up to millions of atoms.
+
+3.The existing neighbor searching code has many steps and we don’t know if the code of each step is efficient enough. 
+#### Goal: 
+1.Try to understand the existing code of searching neighbor atoms.(**write notes to show your comments**)
+
+2.Try to **remove the BOOST math library**, and test efficiency of each step for target examples.
+
+3.Try to **improve the efficiency** of codes.
+#### Possible solution：
+1.To achieve the best performance, you can **feel free to use MPI or openMP or CUDA** to accelerate.
+
+2.***Note***：you’d better don’t use code beyond c++11.
 <br>
 <br>
 
@@ -206,11 +227,24 @@ Design and develop a workflow using Apache airflow or aiida, or other workflow m
 <br>
 <br>
 
-### S2.Abacus实现某个工作流
+### S2.Workflows for Abacus+Materials Project for calculate electric bands
+#### 维度：科学计算+Abacus+工程开发
+#### Background&Problem:
+1.**Abacus** is accurate and effective DFT software to calculate material properties.
+
+2.It is important to automatically and quickly compute the examples in the open material database.
+#### Goal: 
+Developing a workflow to calculate **electric bands** with Abacus for at least 100 structures downloaded in **Materials Project**. (**Compounds of III-V families elements and II-VI families elements is recommended.**)
+#### Possible solution：
+1.The input files example and key parameter setting would be listed.
+
+2.You can find Materials Project data in https://www.materialsproject.org/, and there is official API to get data from this database.
+
+3.You can find some workflows examples in https://gitee.com/ShenZhenXiong/AseAbacusInterface/blob/master/AseAbacusV20200227/example/highflux/ase_abacus_highflux.py .
 <br>
 <br>
 
-### S3: Finite element space based on the Bernstein polynomial
+### S3.Finite element space based on the Bernstein polynomial
 #### 维度：科学计算+FEALPy+工程开发
 #### Background&Problem:
 1.In **FEALPy**, the basis functions of **Lagrange finite element space** defined on the simplex (interval, triangle or tetrahedron) meshes is constructed based on the **barycentric coordinates**, which does not need to introduce the reference element. Furthermore, they satisfy the interpolation property, that is, each basis function takes 1 at one of interpolation points and 0 at the other on each element.
