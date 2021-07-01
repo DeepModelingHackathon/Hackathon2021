@@ -35,7 +35,7 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 #### [A2.统计并抽取网络信息，实现模型压缩](#A2-Analysis-of-information-quantity-and-Model-compression-in-DeepMD-kit)
 
-#### [A3.利用网络结构搜索（NAS）寻找最优模型](#A3-Neural-Architecture-Search-in-energy/force-fitting)
+#### [A3.利用网络结构搜索（NAS）寻找最优模型](#A3-Neural-Architecture-Search-in-energyforce-fitting)
 
 #### ...
 
