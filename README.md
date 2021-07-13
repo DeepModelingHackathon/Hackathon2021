@@ -13,7 +13,7 @@
 **7月1日**：放出部分赛题，选手开始提交proposal及赛题意见<br>
 **7月11日**：更新最终赛题并确定数据集<br>
 **7月12日**：开始线上直播软件教学（具体直播安排见公众号推送）<br>
-**7月25日**：报名截止并停止提交proposal，开始对接导师指导交流<br>
+**7月30日**：报名截止并停止提交proposal，开始对接导师指导交流<br>
 **(7月1日—8月15日是大家熟悉题目、开始动手研究题目的好时机哦)**<br>
 
 ### 活动开始（8月16日—20日，苏州）
@@ -24,7 +24,7 @@
 **8月18日—20日**：正式比赛：
 >放出**bonus题目**，各组选定题目比赛，赛后专家团队评分，选出优秀队伍做展示并颁奖。<br>
 
-每队**7月25日之前可以反复提交proposal**，于正式比赛当天确定1-2道题目，此部分题目的分数主要基于完成度和创新度；<br>
+每队**7月30日之前可以反复提交proposal**，于正式比赛当天确定1-2道题目，此部分题目的分数主要基于完成度和创新度；<br>
 Bonus题目可选多道，不需要提前选定，可根据时间安排即答即交，我们根据此部分题目的完成度和题目数量非线性给分。
 
 ## 题目主题一览
@@ -37,8 +37,6 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 #### [A3.利用网络结构搜索（NAS）寻找最优模型](#A3-Neural-Architecture-Search-in-energyforce-fitting)
 
-#### ...
-
 ### 高性能赛道：打磨物理建模之利刃，吹毫立断（编号H开头）
 
 #### [H1.DeepMD-kit混合精度训练加速](#H1-Mixed-precision-training-in-DeepMD-kit)
@@ -46,8 +44,6 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 #### [H2.ABACUS近邻原子搜索优化](#H2-Improve-the-algorithms-in-searching-for-neighboring-atoms)
 
 #### [H3.FEALPy高效组装单元矩阵](#H3-Efficient-implementation-for-the-finite-element-local-assembly)
-
-#### ...
 
 ### 科学计算：将借物理建模之羽翼，直飞云空（编号S开头）
 
@@ -57,9 +53,8 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 #### [S3.FEALPy实现基于Bernstein多项式的有限元方法](#S3-Finite-element-space-based-on-the-Bernstein-polynomial)
 
-#### ...
 
-### 注：题目细节要求及数据集将在7月11日最终确定
+### 注：题目细节要求及数据集已确定，后续可能只会有细微调整，如有问题欢迎在群里反馈
 <br>
 <br>
 
@@ -86,18 +81,42 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 #### Goal:
 
-Investigate the post-hoc interpretability of descriptors in DeepMD-kit.
+1.Investigate the post-hoc interpretability of descriptors in water systems of different phases (i.e. descriptors of `O` and `H` in different phases, respectively) in DeepMD-kit.
+
+2.Requirements: 
+
+(1)set `descriptor` as `se_a` and train **100w steps** per system, then make analysis for **5 self-chosen systems** (each system will take hours to train, so it’s better to start up early);
+
+(2)add `type_one_side` = `Fasle` of descriptor parameters in input.json, an example is provided here: [need_to_implement](), feel free to change other training parameters.
 
 #### Possible solution:
 
-1.Design a method or utilize methods mentioned above to illustrate the interpretability of descriptors in DeepMD-kit;
+1.This is a problem for people who prefer to do some analysis and may not require much change to the code and implementation.
 
-2.Possibly do some visualization;
+2.To get the basic score, you need to be familiar with the `se_a` descriptor in deepmd-kit and the reasons for its construction. Design a method or utilize methods mentioned above to illustrate the interpretability of descriptors in DeepMD-kit, possibly do some clustering or visualization;
 
-3.**PaddlePaddle** provides various tools convenient for analysis and Interpretation:
+3.Feel free to do other relevant analysis and get the bonus score.
+
+4.**PaddlePaddle** provides various tools convenient for analysis and Interpretation:
 >Interpretation [https://github.com/PaddlePaddle/InterpretDL](https://github.com/PaddlePaddle/InterpretDL)
 
 In addition, **if you choose PaddlePaddle, mentorship can be provided.**
+
+#### Get Start: 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeepMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeepMD-kit relevant projects. 
+
+#### Dataset&Materials:
+1.Water systems in different phases: [need_to_implement]().
+
+#### Scoring point:
+1.The rationality and completeness of the analysis.
+
+2.The innovativeness of the analysis.
+
+#### Submit:
+A zip file which contains: 
+
+1.a report detailing the process of the experiment and the analysis results.
 <br>
 <br>
 ### A2. Analysis of information quantity and Model compression in DeepMD-kit
@@ -112,21 +131,45 @@ In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 3.The information quantity contained in different layers is not clearly compared and may be a way to do network pruning.
 
 #### Goal: 
-1.Make an analysis on the information quantity contained in different layers. 
+1.Train the DeepMD-kit **100w steps** on the given system below and freeze the model (feel free to set other parameters in input.json);
 
-2.Use some strategies to do model compression and make the network smaller and more efficient without losing too much accuracy.
+2.Make an analysis on the information quantity contained in **different layers**;
+
+3.Use some strategies to do model compression and make the network smaller and more efficient without losing too much accuracy.
 
 #### Possible solution:
-1.Use mutual information to measure the information quantity contained in different layers; 
+1.To get the basic score, you need to have a clear understanding of the overall model structure of DeepMD-kit.
+ 
+2.You can use mutual information to measure the information quantity contained in different layers; 
 
-2.Use quantization、knowledge distillation、low-rank factorization or PCA and so on to do model compression; 
+3.You can use quantization、knowledge distillation、low-rank factorization or PCA and so on to do model compression; 
 
-3.**PaddlePaddle** provides various tools convenient for analysis and model compression:
+4.**PaddlePaddle** provides various tools convenient for analysis and model compression:
 >Interpretation https://github.com/PaddlePaddle/InterpretDL 
 
 >Model compression https://github.com/PaddlePaddle/PaddleSlim 
 
 In addition, **if you choose PaddlePaddle, mentorship can be provided.**
+
+#### Get Start: 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeepMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeepMD-kit relevant projects. 
+
+#### Dataset&Materials:
+1.Small dataset: water example contained in `example/water/data`, you can also download from [here]();
+
+2.Challenge dataset: Cu system: [need_to_implement]().
+
+#### Scoring point:
+1.The rationality and completeness of the analysis.
+
+2.The effectiveness and efficiency of the compression (the amount of parameters in compressed model, the inference speed and so on, compared with the standard model).
+
+#### Submit:
+A zip file which contains: 
+
+1.a report detailing the process of the experiment and the analysis results.
+
+2.a copy of code that can run directly (a trained model included).
 <br>
 <br>
 ### A3. Neural Architecture Search in energy/force fitting
@@ -138,23 +181,44 @@ In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 
 2.Architectures in DeepMD-kit are delicately designed based on linear and resnet blocks with theoretical hypothesis，while we are open to any other available architecture design.
 #### Goal:  
-1.Use NAS(or meta learning) to automatically choose parameters for better performance in energy & force fitting;
+1.Use NAS(or meta learning) to automatically change parameters (`neuron`, `lr` and `pref` are recommended) in input.json for better performance in energy & force fitting, after **20w steps** training on the data systems given below;
 
-2.Use NAS to search for a better network, which may outperform standard DeepMD-kit. 
+2.Use NAS to search for a better network, which may outperform standard DeepMD-kit, after **100w steps** training on the data systems given below. 
 #### Possible solution： 
-1.For **Goal2**, in energy/force fitting (or you can simultaneously do both), use NAS to search for the best architectural building block on a small dataset and then transfer the best block architecture to a larger dataset, then train a new model. Finally, compare with standard trained DeepMD-kit on validation dataset.
+1.This problem is the one with high freedom, you may use any tools to achieve the goals.
 
-2.**PaddlePaddle** provides various tools convenient for NAS:
+2.For **Goal2**, in energy/force fitting (or you can simultaneously do both), you can use NAS to search for the best architectural building block on a small part of dataset and then transfer the best block architecture to a larger part, then train a new model. Finally, compare with standard trained DeepMD-kit on validation part.
+
+3.**PaddlePaddle** provides various tools convenient for NAS:
 >Slim https://github.com/PaddlePaddle/PaddleSlim
 
 >NAS https://github.com/PaddlePaddle/PaddleSlim/blob/release/2.1.0/docs/zh_cn/quick_start/static/nas_tutorial.md 
 
 In addition, **if you choose PaddlePaddle, mentorship can be provided.**
+#### Get Start: 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeepMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeepMD-kit relevant projects. 
+
+#### Dataset&Materials:
+1.Small dataset: water example contained in `example/water/data`, you can also download from [here]();
+
+2.Challenge dataset: Cu system: [need_to_implement]().
+
+#### Scoring point:
+1.The effectiveness and correctness of the NAS procedure;
+
+2.The innovativeness of the NAS procedure.
+
+#### Submit:
+A zip file which contains: 
+
+1.a report detailing the process of the experiment;
+
+2.a copy of code that can run directly (a trained model included).
 <br>
 <br>
 
 ## 高性能赛道：打磨物理建模之利刃，吹毫立断
-### H1. Mixed precision training in DeepMD-kit
+### H1. Mixed precision training in DeepMD-kit(未更新)
 #### 维度：高性能+DeepMD-kit+科研创新
 #### Background&Problem：
 1.**Mixed precision training** is widely used in HPC. Under the premise of ensuring the output accuracy within a certain range, the training process can be accelerated by using **single precision** or **semi-precision**.
@@ -174,7 +238,7 @@ With specific device and specific Tensorflow version, try to use the mixture of 
 ### H2. Improve the algorithms in searching for neighboring atoms 
 #### 维度：高性能+ABACUS+工程开发
 #### Background&Problem：
-1.For **large-scale DFT calculations**, **ABACUS** adopts atomic orbitals with **strict radius cutoffs**, efficient searching and recording neighboring atoms is an essential procedure that has been implemented in ABACUS. The current algorithms in searching neighbors can be used for large systems, but **still has potentials to be further improved**.
+1.For **large-scale DFT calculations**, **ABACUS** adopts atomic orbitals with **strict radius cutoffs**. Efficient searching and recording neighboring atoms is an essential procedure that has been implemented in ABACUS. The current algorithms in searching neighbors can be used for large systems, but **still has potentials to be further improved**.
 
 #### Goal: 
 1.Read and understand the algorithms for searching neighboring atoms.
@@ -184,6 +248,27 @@ With specific device and specific Tensorflow version, try to use the mixture of 
 3.Try to improve the efficiency of searching neighbors.
 #### Possible solution：
 1.Use **MPI, openMP or CUDA** to accelerate the efficiency of the code.
+
+#### Get Start: 
+You can see [here](https://github.com/deepmodeling/abacus-develop/tree/reconstruction) for coding instruction, and `reconstruction` branch is where you accomplish this project. The code to be edited might mainly lies in `abacus-develop/source/module_neighbor` in `reconstruction` branch. Be aware of **online tutorial of ABACUS** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose ABACUS relevant projects. 
+
+#### Dataset&Materials:
+1.Small dataset: example dataset in code package: `abacus-develop/tests/501_NO_neighboring_GaAs512/`, you can also download here: [501_NO_neighboring_GaAs512.zip](H2/501_NO_neighboring_GaAs512.zip).
+
+2.Challenge dataset: C262144-neighbor, download here: [C262144-neighbor.zip](H2/C262144-neighbor.zip).
+
+#### Scoring point:
+1.The correctness of the implementation;
+
+2.The efficiency of the code compared with the standard ABACUS procedure.
+
+
+#### Submit:
+A zip file which contains: 
+
+1.a report detailing the process of the experiment;
+
+2.a copy of code that can run directly.
 <br>
 <br>
 
@@ -194,15 +279,32 @@ With specific device and specific Tensorflow version, try to use the mixture of 
 
 2.At present, **FEALPy** uses the einsum function in Numpy to get the element matrices,but this function does not support multi-core calculation. As a result, FEALPy can not make full use of the computer’s  multi-core computing resources in this step.
 #### Goal:
-Design and develop a special multi-core version function to replace the einsum function for FEALPy.
+Please see the code in [construct_stiff_matrix.py](H3/construct_stiff_matrix.py), design and develop a special **multi-core version** function to replace the **einsum function**.
 #### Possible solution
 One can find some detailed discussion in the following paper:
 
 >Luporini F, Varbanescu A L, Rathgeber F, et al. Cross-loop optimization of arithmetic intensity for finite element local assembly[J]. ACM Transactions on Architecture and Code Optimization (TACO), 2015, 11(4): 1-25.
+
+#### Get Start: 
+Please see the [install.md](H3/install.md) file for installation FEALPy on your system. See [here](https://github.com/deepmodeling/fealpy) for coding instruction, and `master` branch is where you accomplish this project. Be aware of **online tutorial of FEALPy** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose FEALPy relevant projects.
+
+#### Scoring point:
+1.The correctness of the implementation;
+
+2.The efficiency of the code compared with the standard single-core FEALPy procedure.
+
+
+#### Submit:
+A zip file which contains: 
+
+1.a report detailing the process of the experiment;
+
+2.a copy of code that can run directly.
+
 <br>
 
 ## 科学计算：将借物理建模之羽翼，直飞云空
-### S1. Workflows for computing physical properties
+### S1. Workflows for computing physical properties(未更新)
 #### 维度：科学计算+DeepMD-kit+科研创新
 #### Background&Problem:
 1.**Well-designed workflows** are important for the transparency and reproducibility of scientific computing tasks. In addition, they are very useful for both pedagogical and production purposes.
@@ -230,15 +332,36 @@ Design and develop a workflow using Apache airflow or aiida, or other workflow m
 #### Goal: 
 1.Developing a workflow to calculate **band gaps** of materials with ABACUS for **at least 100 structures** downloaded from the Materials Project. **(Compounds of III-V family elements and II-VI family elements are recommended.)**
 
-#### Possible solution：
-1.Examples including input files and explanations for key parameters **will be provided**.
+2.Make sure that the workflow code has good **universality** for other materials.
 
-2.The atomic structures and related information can be downloaded from the Materials Project (https://www.materialsproject.org/), and there is an official API to get data from this database.
+#### Get started: 
+You can see [here](https://github.com/deepmodeling/abacus-develop/tree/reconstruction) for coding instruction, and `reconstruction` branch is where you accomplish this project. Be aware of **online tutorial of ABACUS** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose ABACUS relevant projects. 
 
-3.You can find similar workflow examples on the website: https://gitee.com/ShenZhenXiong/AseAbacusInterface/blob/master/AseAbacusV20200227/example/highflux/ase_abacus_highflux.py
+#### Dataset&Material:
+1.**An example** including input files and explanations for key parameters is provided: [example-Si-band.zip](S2/example-Si-band.zip) , which contains the first scf step and the second nscf step of Si-diamond band calculation.
+
+2.The atomic structures and related information can be downloaded from the [Materials Project](https://www.materialsproject.org/), and there is an official API to get data from this database.
+
+3.You can find similar workflow examples on [this website](https://gitee.com/ShenZhenXiong/AseAbacusInterface/blob/master/AseAbacusV20200227/example/highflux/ase_abacus_highflux.py).
+
+4.You can download pseudopotential files [here](http://abacus.ustc.edu.cn/uploadfile/Libs/SG15_v1.0_Pseudopotential.zip).
+
+5.The goal 100 material examples are listed in [Material_IDs.txt](/S2/Material_IDs.txt), which you need to download from [Materials Project](https://www.materialsproject.org/) and compute with ABACUS.
+
+#### Scoring point:
+1.The correctness of the implementation;
+
+2.The universality and transferability of the designed workflow.
+
+
+#### Submit:
+A zip file which contains: 
+
+1.a report detailing the process of the experiment;
+
+2.a copy of code that can run directly.
 <br>
 <br>
-
 ### S3. Finite element space based on the Bernstein polynomial
 #### 维度：科学计算+FEALPy+工程开发
 #### Background&Problem:
@@ -246,7 +369,7 @@ Design and develop a workflow using Apache airflow or aiida, or other workflow m
 
 2.The calculation of higher derivatives and numerical integrals of this kind of basis function is cumbersome.
 
-3.If the interpolation property is not required, one can use the **Bernstein polynomial** based on barycentric coordinates,which owns simpler form and has clear formulas for derivation and integral calculation.
+3.If the interpolation property is not required, one can use the **Bernstein polynomial** based on barycentric coordinates, which owns simpler form and has clear formulas for derivation and integral calculation.
 
 #### Goal: 
 1.Design and develop a space class named `BernsteinFiniteElementSpace`, which should have same interfaces as the `LagrangeFiniteElementSpace` class in FEALPy;
@@ -260,7 +383,22 @@ Design and develop a workflow using Apache airflow or aiida, or other workflow m
 2.One can find the Bernstein basis based on barycentric coordinates in the follow paper:
 >Feng L, Alliez P, Busé L, et al. Curved optimal delaunay triangulation[J]. ACM Transactions on Graphics, 2018, 37(4): 16.
 
-### 赛题正在持续更新中
+3.Please see [here](S3/) for the specific code implementation requirements.
+
+#### Get Start: 
+Please see the [install.md](H3/install.md) file for installation FEALPy on your system. See [here](https://github.com/deepmodeling/fealpy) for coding instruction, and `master` branch is where you accomplish this project. Be aware of **online tutorial of FEALPy** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose FEALPy relevant projects.
+
+#### Scoring point:
+1.The correctness of the implementation;
+
+
+#### Submit:
+A zip file which contains: 
+
+1.a report detailing the process of the experiment;
+
+2.a copy of code that can run directly.
+
 ## 其他信息
 ### 报名问卷:
 [点此填写](https://www.wjx.top/vj/toN7B3a.aspx)
