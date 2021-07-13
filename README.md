@@ -254,9 +254,8 @@ A zip file which contains:
 1.a report detailing the process of the experiment;
 
 2.a copy of code that can run directly (a trained model included).
+<br>
 
-<br>
-<br>
 ### H2. Improve the algorithms in searching for neighboring atoms 
 #### 维度：高性能+ABACUS+工程开发
 #### Background&Problem：
