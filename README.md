@@ -81,13 +81,13 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 #### Goal:
 
-1.Investigate the post-hoc interpretability of descriptors in water systems of different phases (i.e. descriptors of `O` and `H` in different phases, respectively) in DeepMD-kit.
+1.Investigate the post-hoc interpretability of descriptors in copper systems of different crystal structures (i.e. descriptors of `Cu` in different crystal structures) in DeepMD-kit.
 
 2.Requirements: 
 
-(1)set `descriptor` as `se_a` and train **100w steps** per system, then make analysis for **5 self-chosen systems** (each system will take hours to train, so it’s better to start up early);
+(1)set `descriptor` as `se_a` and train **100w steps** on 6 copper systems as a whole training set, then make analysis for **6 given systems** (it will take hours to train, so it’s better to start up early);
 
-(2)add `type_one_side` = `Fasle` of descriptor parameters in input.json, an example is provided here: [need_to_implement](), feel free to change other training parameters.
+(2)add `type_one_side` = `Fasle` of descriptor parameters in input.json, an example is provided here: [input.json](A1/input.json), feel free to change other training parameters.
 
 #### Possible solution:
 
@@ -106,7 +106,7 @@ In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeepMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeepMD-kit relevant projects. 
 
 #### Dataset&Materials:
-1.Water systems in different phases: [need_to_implement]().
+1.Copper systems in different crystal structures: [code:4m44](https://pan.baidu.com/s/19CBKaN-ZEidWc3mChAYJlg).
 
 #### Scoring point:
 1.The rationality and completeness of the analysis.
@@ -155,9 +155,9 @@ In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeepMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeepMD-kit relevant projects. 
 
 #### Dataset&Materials:
-1.Small dataset: water example contained in `example/water/data`, you can also download from [here]();
+1.Small dataset: water example contained in `example/water/data`, you can also download from [here](https://github.com/deepmodeling/deepmd-kit/tree/devel/examples/water/data);
 
-2.Challenge dataset: Cu system: [need_to_implement]().
+2.Challenge dataset: Cu system: [code:ifvk](https://pan.baidu.com/s/1QBP1CyshrnBV8UiKGQnSGw) (which is one of the six systems of dataset in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)).
 
 #### Scoring point:
 1.The rationality and completeness of the analysis.
@@ -199,9 +199,9 @@ In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeepMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeepMD-kit relevant projects. 
 
 #### Dataset&Materials:
-1.Small dataset: water example contained in `example/water/data`, you can also download from [here]();
+1.Small dataset: water example contained in `example/water/data`, you can also download from [here](https://github.com/deepmodeling/deepmd-kit/tree/devel/examples/water/data);
 
-2.Challenge dataset: Cu system: [need_to_implement]().
+2.Challenge dataset: Cu system: [code:ifvk](https://pan.baidu.com/s/1QBP1CyshrnBV8UiKGQnSGw) (which is one of the six systems of dataset in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)).
 
 #### Scoring point:
 1.The effectiveness and correctness of the NAS procedure;
@@ -218,7 +218,7 @@ A zip file which contains:
 <br>
 
 ## 高性能赛道：打磨物理建模之利刃，吹毫立断
-### H1. Mixed precision training in DeepMD-kit(未更新)
+### H1. Mixed precision training in DeepMD-kit
 #### 维度：高性能+DeepMD-kit+科研创新
 #### Background&Problem：
 1.**Mixed precision training** is widely used in HPC. Under the premise of ensuring the output accuracy within a certain range, the training process can be accelerated by using **single precision** or **semi-precision**.
@@ -226,13 +226,35 @@ A zip file which contains:
 2.**DeepMD-kit** adopts double precision training by default and has a single precision training interface, but there is no corresponding exploration for semi-precision training.
 
 #### Goal: 
-With specific device and specific Tensorflow version, try to use the mixture of single precision and semi-precision in the DeepMD-Kit training process, and speed up the training process under the premise of ensuring the output precision(**detailed requirements will be given later**).
+1.With single v100 and specific Tensorflow version (will be given later), try to use the mixture of single precision and semi-precision in the DeepMD-Kit training process, and speed up the training process under the premise of ensuring the output precision (threshold of error will be given later).
+
+2.After the same time training process (you can set the time), compare the validate loss with the standard training procedure.
 #### Possible solution：
 1.You can feel free to change the float precision during training process;
 
 2.To achieve the best performance, you can also change the neuron parameters to refine the number of network layers;
 
 3.***Note***：To ensure the accuracy of semi-precision training, attention should be paid to gradient explosion and gradient vanishing. In addition, be careful about the matrix dimension in semi-precision Tensor Core.
+#### Get Start: 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeepMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeepMD-kit relevant projects. 
+
+#### Dataset&Materials:
+1.Small dataset: water example contained in `example/water/data`, you can also download from [here](https://github.com/deepmodeling/deepmd-kit/tree/devel/examples/water/data);
+
+2.Challenge dataset: Cu system: [code:ifvk](https://pan.baidu.com/s/1QBP1CyshrnBV8UiKGQnSGw) (which is one of the six systems of dataset in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)).
+
+#### Scoring point:
+1.The correctness and efficiency of the training boosting ;
+
+2.The innovativeness of the procedure.
+
+#### Submit:
+A zip file which contains: 
+
+1.a report detailing the process of the experiment;
+
+2.a copy of code that can run directly (a trained model included).
+
 <br>
 <br>
 ### H2. Improve the algorithms in searching for neighboring atoms 
@@ -304,14 +326,14 @@ A zip file which contains:
 <br>
 
 ## 科学计算：将借物理建模之羽翼，直飞云空
-### S1. Workflows for computing physical properties(未更新)
+### S1. Workflows for computing physical properties
 #### 维度：科学计算+DeepMD-kit+科研创新
 #### Background&Problem:
 1.**Well-designed workflows** are important for the transparency and reproducibility of scientific computing tasks. In addition, they are very useful for both pedagogical and production purposes.
 
 2.Practitioners in scientific computing typically lack trainings for managing and maintaining workflows.
 
-3.Here we list a few tasks for which we pay particular attention to the workflow perspective. One may propose their own workflows（choose one or more of the followings）: 
+3.Here we list a few tasks for which we pay particular attention to the workflow perspective. One may propose their own workflows（choose one or more of the followings, **or you can inform us and put forward other workflows**）: 
 1) to compute the **heat conductance of water** using a Deep Potential model; 
 
 2) to compute the **radial distribution functions** using a Deep Potential model; 
@@ -321,6 +343,21 @@ A zip file which contains:
 Develop good workflows for large-scale and computationally-intensive tasks, which would help to boost the efficiency of scientific computation jobs.
 #### Possible solution：
 Design and develop a workflow using Apache airflow or aiida, or other workflow management tools. One may take dpti (https://github.com/deepmodeling/dpti ) as an example. 
+#### Get Start: 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeepMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeepMD-kit relevant projects. 
+
+#### Scoring point:
+1.The correctness of the implementation;
+
+2.The universality and transferability of the designed workflow.
+
+
+#### Submit:
+A zip file which contains: 
+
+1.a report detailing the process of the experiment;
+
+2.a copy of code that can run directly.
 <br>
 <br>
 
