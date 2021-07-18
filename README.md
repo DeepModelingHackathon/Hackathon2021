@@ -9,8 +9,8 @@
 
 ## 软件教学直播日程
 **7月19日** ABACUS使用指导与赛题介绍<br>
-**7月21日** DeepMD-kit使用指导与赛题介绍<br>
-**7月23日** Nvidia线下活动与直播教程大礼包（含Nvidia、DeepMD-kit、PaddlePaddle关于科学计算中的高性能优化分享）<br>
+**7月21日** DeePMD-kit使用指导与赛题介绍<br>
+**7月23日** NVIDIA线下活动与直播教程大礼包（含NVIDIA、DeePMD-kit、PaddlePaddle关于科学计算中的高性能优化分享）<br>
 **7月26日** FEALPy使用指导与赛题介绍<br>
 **7月28日** PaddlePaddle使用指导与赛题介绍<br>
 
@@ -40,13 +40,13 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 #### [A1.探究原子邻域描述子的可解释性](#a1-interpretability-of-descriptors-in-deepmd-kit)
 
-#### [A2.统计并抽取网络信息，实现模型压缩](#A2-Analysis-of-information-quantity-and-Model-compression-in-DeepMD-kit)
+#### [A2.统计并抽取网络信息，实现模型压缩](#A2-Analysis-of-information-quantity-and-Model-compression-in-DeePMD-kit)
 
 #### [A3.利用网络结构搜索（NAS）寻找最优模型](#A3-Neural-Architecture-Search-in-energyforce-fitting)
 
 ### 高性能赛道：打磨物理建模之利刃，吹毫立断（编号H开头）
 
-#### [H1.DeepMD-kit混合精度训练加速](#H1-Mixed-precision-training-in-DeepMD-kit)
+#### [H1.DeePMD-kit混合精度训练加速](#H1-Mixed-precision-training-in-DeePMD-kit)
 
 #### [H2.ABACUS近邻原子搜索优化](#H2-Improve-the-algorithms-in-searching-for-neighboring-atoms)
 
@@ -54,7 +54,7 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 ### 科学计算：将借物理建模之羽翼，直飞云空（编号S开头）
 
-#### [S1.DeepMD-kit实现热导/扩散系数/径向分布函数计算工作流](#S1-Workflows-for-computing-physical-properties)
+#### [S1.DeePMD-kit实现热导/扩散系数/径向分布函数计算工作流](#S1-Workflows-for-computing-physical-properties)
 
 #### [S2.ABACUS实现材料能带计算工作流](#S2-Workflows-for-ABACUSMaterials-Project-for-calculating-band-gaps)
 
@@ -67,9 +67,9 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 ## AI赛道：理解物理建模之智慧，洞若观火
 
-### A1. Interpretability of descriptors in DeepMD-kit
+### A1. Interpretability of descriptors in DeePMD-kit
 
-#### 维度：AI+DeepMD-kit+科研创新
+#### 维度：AI+DeePMD-kit+科研创新
 
 #### Background&Problem：
 
@@ -84,11 +84,11 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 >RETAIN ([https://proceedings.neurips.cc/paper/2016/hash/231141b34c82aa95e48810a9d1b33a79-Abstract.html](https://proceedings.neurips.cc/paper/2016/hash/231141b34c82aa95e48810a9d1b33a79-Abstract.html) )
 
-3.**Descriptors in DeepMD-kit** contain the environment information of each central atom, and are fed into fitting network to obtain the final output. The interpretability of these descriptors remains no more investigation, which is open to all kinds of responsible explanation.
+3.**Descriptors in DeePMD-kit** contain the environment information of each central atom, and are fed into fitting network to obtain the final output. The interpretability of these descriptors remains no more investigation, which is open to all kinds of responsible explanation.
 
 #### Goal:
 
-1.Investigate the post-hoc interpretability of descriptors in copper systems of different crystal structures (i.e. descriptors of `Cu` in different crystal structures) in DeepMD-kit.
+1.Investigate the post-hoc interpretability of descriptors in copper systems of different crystal structures (i.e. descriptors of `Cu` in different crystal structures) in DeePMD-kit.
 
 2.Requirements: 
 
@@ -100,7 +100,7 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 1.This is a problem for people who prefer to do some analysis and may not require much change to the code and implementation.
 
-2.To get the basic score, you need to be familiar with the `se_a` descriptor in deepmd-kit and the reasons for its construction. Design a method or utilize methods mentioned above to illustrate the interpretability of descriptors in DeepMD-kit, possibly do some clustering or visualization;
+2.To get the basic score, you need to be familiar with the `se_a` descriptor in deepmd-kit and the reasons for its construction. Design a method or utilize methods mentioned above to illustrate the interpretability of descriptors in DeePMD-kit, possibly do some clustering or visualization;
 
 3.Feel free to do other relevant analysis and get the bonus score.
 
@@ -110,7 +110,7 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 
 #### Get Start: 
-You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeepMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeepMD-kit relevant projects. 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
 
 #### Dataset&Materials:
 1.Copper systems in different crystal structures: [code:4m44](https://pan.baidu.com/s/19CBKaN-ZEidWc3mChAYJlg).
@@ -126,26 +126,26 @@ A zip file which contains:
 1.a report detailing the process of the experiment and the analysis results.
 <br>
 <br>
-### A2. Analysis of information quantity and Model compression in DeepMD-kit
+### A2. Analysis of information quantity and Model compression in DeePMD-kit
 
-#### 维度：AI+DeepMD-kit+科研创新
+#### 维度：AI+DeePMD-kit+科研创新
 
 #### Background&Problem:
 1.***Model compression*** in AI is solution to efficiency and information distillation. 
 
-2.Networks in DeepMD-kit may contain some redundant parameters.
+2.Networks in DeePMD-kit may contain some redundant parameters.
 
 3.The information quantity contained in different layers is not clearly compared and may be a way to do network pruning.
 
 #### Goal: 
-1.Train the DeepMD-kit **100w steps** on the given system below and freeze the model (feel free to set other parameters in input.json);
+1.Train the DeePMD-kit **100w steps** on the given system below and freeze the model (feel free to set other parameters in input.json);
 
 2.Make an analysis on the information quantity contained in **different layers**;
 
 3.Use some strategies to do model compression and make the network smaller and more efficient without losing too much accuracy.
 
 #### Possible solution:
-1.To get the basic score, you need to have a clear understanding of the overall model structure of DeepMD-kit.
+1.To get the basic score, you need to have a clear understanding of the overall model structure of DeePMD-kit.
  
 2.You can use mutual information to measure the information quantity contained in different layers; 
 
@@ -159,7 +159,7 @@ A zip file which contains:
 In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 
 #### Get Start: 
-You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeepMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeepMD-kit relevant projects. 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
 
 #### Dataset&Materials:
 1.Small dataset: water example contained in `example/water/data`, you can also download from [here](https://github.com/deepmodeling/deepmd-kit/tree/devel/examples/water/data);
@@ -181,20 +181,20 @@ A zip file which contains:
 <br>
 ### A3. Neural Architecture Search in energy/force fitting
 
-#### 维度：AI+DeepMD-kit+科研创新
+#### 维度：AI+DeePMD-kit+科研创新
 
 #### Background&Problem：
 1.***Neural Architecture Search（NAS)*** may be solution to tedious network architecture design（https://arxiv.org/abs/1707.07012), which can learn the model architectures directly on the dataset of interest.
 
-2.Architectures in DeepMD-kit are delicately designed based on linear and resnet blocks with theoretical hypothesis，while we are open to any other available architecture design.
+2.Architectures in DeePMD-kit are delicately designed based on linear and resnet blocks with theoretical hypothesis，while we are open to any other available architecture design.
 #### Goal:  
 1.Use NAS(or meta learning) to automatically change parameters (`neuron`, `lr` and `pref` are recommended) in input.json for better performance in energy & force fitting, after **20w steps** training on the data systems given below;
 
-2.Use NAS to search for a better network, which may outperform standard DeepMD-kit, after **100w steps** training on the data systems given below. 
+2.Use NAS to search for a better network, which may outperform standard DeePMD-kit, after **100w steps** training on the data systems given below. 
 #### Possible solution： 
 1.This problem is the one with high freedom, you may use any tools to achieve the goals.
 
-2.For **Goal2**, in energy/force fitting (or you can simultaneously do both), you can use NAS to search for the best architectural building block on a small part of dataset and then transfer the best block architecture to a larger part, then train a new model. Finally, compare with standard trained DeepMD-kit on validation part.
+2.For **Goal2**, in energy/force fitting (or you can simultaneously do both), you can use NAS to search for the best architectural building block on a small part of dataset and then transfer the best block architecture to a larger part, then train a new model. Finally, compare with standard trained DeePMD-kit on validation part.
 
 3.**PaddlePaddle** provides various tools convenient for NAS:
 >Slim https://github.com/PaddlePaddle/PaddleSlim
@@ -203,7 +203,7 @@ A zip file which contains:
 
 In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 #### Get Start: 
-You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeepMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeepMD-kit relevant projects. 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
 
 #### Dataset&Materials:
 1.Small dataset: water example contained in `example/water/data`, you can also download from [here](https://github.com/deepmodeling/deepmd-kit/tree/devel/examples/water/data);
@@ -225,15 +225,15 @@ A zip file which contains:
 <br>
 
 ## 高性能赛道：打磨物理建模之利刃，吹毫立断
-### H1. Mixed precision training in DeepMD-kit
-#### 维度：高性能+DeepMD-kit+科研创新
+### H1. Mixed precision training in DeePMD-kit
+#### 维度：高性能+DeePMD-kit+科研创新
 #### Background&Problem：
 1.**Mixed precision training** is widely used in HPC. Under the premise of ensuring the output accuracy within a certain range, the training process can be accelerated by using **single precision** or **semi-precision**.
 
-2.**DeepMD-kit** adopts double precision training by default and has a single precision training interface, but there is no corresponding exploration for semi-precision training.
+2.**DeePMD-kit** adopts double precision training by default and has a single precision training interface, but there is no corresponding exploration for semi-precision training.
 
 #### Goal: 
-1.With single v100 and specific Tensorflow version (will be given later), try to use the mixture of single precision and semi-precision in the DeepMD-Kit training process, and speed up the training process under the premise of ensuring the output precision (threshold of error will be given later).
+1.With single v100 and specific Tensorflow version (will be given later), try to use the mixture of single precision and semi-precision in the DeePMD-Kit training process, and speed up the training process under the premise of ensuring the output precision (threshold of error will be given later).
 
 2.After the same time training process (you can set the time), compare the validate loss with the standard training procedure.
 #### Possible solution：
@@ -243,7 +243,7 @@ A zip file which contains:
 
 3.***Note***：To ensure the accuracy of semi-precision training, attention should be paid to gradient explosion and gradient vanishing. In addition, be careful about the matrix dimension in semi-precision Tensor Core.
 #### Get Start: 
-You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeepMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeepMD-kit relevant projects. 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
 
 #### Dataset&Materials:
 1.Small dataset: water example contained in `example/water/data`, you can also download from [here](https://github.com/deepmodeling/deepmd-kit/tree/devel/examples/water/data);
@@ -334,7 +334,7 @@ A zip file which contains:
 
 ## 科学计算：将借物理建模之羽翼，直飞云空
 ### S1. Workflows for computing physical properties
-#### 维度：科学计算+DeepMD-kit+科研创新
+#### 维度：科学计算+DeePMD-kit+科研创新
 #### Background&Problem:
 1.**Well-designed workflows** are important for the transparency and reproducibility of scientific computing tasks. In addition, they are very useful for both pedagogical and production purposes.
 
@@ -351,7 +351,7 @@ Develop good workflows for large-scale and computationally-intensive tasks, whic
 #### Possible solution：
 Design and develop a workflow using Apache airflow or aiida, or other workflow management tools. One may take dpti (https://github.com/deepmodeling/dpti ) as an example. 
 #### Get Start: 
-You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeepMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeepMD-kit relevant projects. 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
 
 #### Scoring point:
 1.The correctness of the implementation;
