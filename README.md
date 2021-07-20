@@ -14,6 +14,9 @@
 **7月26日** FEALPy使用指导与赛题介绍<br>
 **7月28日** PaddlePaddle使用指导与赛题介绍<br>
 
+## 直播录屏&PPT
+**点击下载**: [code:683b](https://pan.baidu.com/s/16EAp-jBqO6pB2VysB-IVNA)
+
 ## 比赛日程
 ### 赛前准备阶段（8月15日之前）
 
