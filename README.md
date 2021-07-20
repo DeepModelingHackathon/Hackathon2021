@@ -113,7 +113,7 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 
 #### Get Start: 
-You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `hackathon2021` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `hackathon2021` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
 
 #### Dataset&Materials:
 1.Copper systems in different crystal structures: [code:4m44](https://pan.baidu.com/s/19CBKaN-ZEidWc3mChAYJlg).
@@ -162,7 +162,7 @@ A zip file which contains:
 In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 
 #### Get Start: 
-You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `hackathon2021` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `hackathon2021` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
 
 #### Dataset&Materials:
 1.Small dataset: water example contained in `example/water/data`, you can also download from [here](https://github.com/deepmodeling/deepmd-kit/tree/devel/examples/water/data);
@@ -206,7 +206,7 @@ A zip file which contains:
 
 In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 #### Get Start: 
-You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `hackathon2021` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `hackathon2021` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
 
 #### Dataset&Materials:
 1.Small dataset: water example contained in `example/water/data`, you can also download from [here](https://github.com/deepmodeling/deepmd-kit/tree/devel/examples/water/data);
@@ -246,7 +246,7 @@ A zip file which contains:
 
 3.***Note***：To ensure the accuracy of semi-precision training, attention should be paid to gradient explosion and gradient vanishing. In addition, be careful about the matrix dimension in semi-precision Tensor Core.
 #### Get Start: 
-You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `hackathon2021` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `hackathon2021` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
 
 #### Dataset&Materials:
 1.Small dataset: water example contained in `example/water/data`, you can also download from [here](https://github.com/deepmodeling/deepmd-kit/tree/devel/examples/water/data);
@@ -282,7 +282,7 @@ A zip file which contains:
 1.Use **MPI, openMP or CUDA** to accelerate the efficiency of the code.
 
 #### Get Start: 
-You can see [here](https://github.com/deepmodeling/abacus-develop/tree/reconstruction) for coding instruction, and `reconstruction` branch is where you accomplish this project. The code to be edited might mainly lies in `abacus-develop/source/module_neighbor` in `reconstruction` branch. Be aware of **online tutorial of ABACUS** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose ABACUS relevant projects. 
+You can see [here](https://github.com/deepmodeling/abacus-develop/tree/hackathon2021) for coding instruction, and `hackathon2021` branch is where you accomplish this project. The code to be edited might mainly lies in `abacus-develop/source/module_neighbor` in `hackathon2021` branch. Be aware of **online tutorial of ABACUS** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose ABACUS relevant projects. 
 
 #### Dataset&Materials:
 1.Small dataset: example dataset in code package: `abacus-develop/tests/501_NO_neighboring_GaAs512/`, you can also download here: [501_NO_neighboring_GaAs512.zip](H2/501_NO_neighboring_GaAs512.zip).
@@ -354,7 +354,7 @@ Develop good workflows for large-scale and computationally-intensive tasks, whic
 #### Possible solution：
 Design and develop a workflow using Apache airflow or aiida, or other workflow management tools. One may take dpti (https://github.com/deepmodeling/dpti ) as an example. 
 #### Get Start: 
-You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `develop` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `develop` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `hackathon2021` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `hackathon2021` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
 
 #### Scoring point:
 1.The correctness of the implementation;
@@ -382,7 +382,7 @@ A zip file which contains:
 2.Make sure that the workflow code has good **universality** for other materials.
 
 #### Get started: 
-You can see [here](https://github.com/deepmodeling/abacus-develop/tree/reconstruction) for coding instruction, and `reconstruction` branch is where you accomplish this project. Be aware of **online tutorial of ABACUS** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose ABACUS relevant projects. 
+You can see [here](https://github.com/deepmodeling/abacus-develop/tree/hackathon2021) for coding instruction, and `hackathon2021` branch is where you accomplish this project. Be aware of **online tutorial of ABACUS** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose ABACUS relevant projects. 
 
 #### Dataset&Material:
 1.**An example** including input files and explanations for key parameters is provided: [example-Si-band.zip](S2/example-Si-band.zip) , which contains the first scf step and the second nscf step of Si-diamond band calculation.
