@@ -11,6 +11,7 @@
 **7月19日** ABACUS使用指导与赛题介绍<br>
 **7月21日** DeePMD-kit使用指导与赛题介绍<br>
 **7月23日** NVIDIA线下活动与直播教程大礼包（含NVIDIA、DeePMD-kit、PaddlePaddle关于科学计算中的高性能优化分享）<br>
+**7月25日** 科学计算工作流设计与案例介绍<br>
 **7月26日** FEALPy使用指导与赛题介绍<br>
 **7月28日** PaddlePaddle使用指导与赛题介绍<br>
 
@@ -167,7 +168,7 @@ You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instru
 #### Dataset&Materials:
 1.Small dataset: water example contained in `example/water/data`, you can also download from [here](https://github.com/deepmodeling/deepmd-kit/tree/devel/examples/water/data);
 
-2.Challenge dataset: Cu system: [code:ifvk](https://pan.baidu.com/s/1QBP1CyshrnBV8UiKGQnSGw) (which is one of the six systems of dataset in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)).
+2.Challenge dataset: Cu system: [code:ifvk](https://pan.baidu.com/s/1QBP1CyshrnBV8UiKGQnSGw) (which is one of the six systems of dataset in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)), and an example input.json is provided here: [input.json](A1/input.json) (which is the same as in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)).
 
 #### Scoring point:
 1.The rationality and completeness of the analysis.
@@ -211,8 +212,7 @@ You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instru
 #### Dataset&Materials:
 1.Small dataset: water example contained in `example/water/data`, you can also download from [here](https://github.com/deepmodeling/deepmd-kit/tree/devel/examples/water/data);
 
-2.Challenge dataset: Cu system: [code:ifvk](https://pan.baidu.com/s/1QBP1CyshrnBV8UiKGQnSGw) (which is one of the six systems of dataset in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)).
-
+2.Challenge dataset: Cu system: [code:ifvk](https://pan.baidu.com/s/1QBP1CyshrnBV8UiKGQnSGw) (which is one of the six systems of dataset in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)), and an example input.json is provided here: [input.json](A1/input.json) (which is the same as in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)).
 #### Scoring point:
 1.The effectiveness and correctness of the NAS procedure;
 
@@ -251,7 +251,7 @@ You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instru
 #### Dataset&Materials:
 1.Small dataset: water example contained in `example/water/data`, you can also download from [here](https://github.com/deepmodeling/deepmd-kit/tree/devel/examples/water/data);
 
-2.Challenge dataset: Cu system: [code:ifvk](https://pan.baidu.com/s/1QBP1CyshrnBV8UiKGQnSGw) (which is one of the six systems of dataset in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)).
+2.Challenge dataset: Cu system: [code:ifvk](https://pan.baidu.com/s/1QBP1CyshrnBV8UiKGQnSGw) (which is one of the six systems of dataset in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)), and an example input.json is provided here: [input.json](A1/input.json) (which is the same as in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)).
 
 #### Scoring point:
 1.The correctness and efficiency of the training boosting ;
