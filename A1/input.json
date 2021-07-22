@@ -1,0 +1,68 @@
+{
+    "_comment": " model parameters",
+    "model": {
+	"type_map":	["Cu"],
+	"descriptor" :{
+	    "type":		"se_e2_a",
+	    "sel":		[500],
+	    "rcut_smth":	2.00,
+	    "rcut":		8.00,
+	    "neuron":		[25, 50, 100],
+	    "resnet_dt":	false,
+	    "type_one_side":	false,
+	    "axis_neuron":	12,
+	    "seed":		1,
+	    "_comment":		" that's all"
+	},
+	"fitting_net" : {
+	    "neuron":		[240, 240, 240],
+	    "resnet_dt":	true,
+	    "seed":		1,
+	    "_comment":		" that's all"
+	},
+	"_comment":	" that's all"
+    },
+
+    "learning_rate" :{
+	"type":		"exp",
+	"decay_steps":	40000,
+	"start_lr":	0.001,	
+	"stop_lr":	3.51e-8,
+	"_comment":	"that's all"
+    },
+
+    "loss" :{
+	"type":		"ener",
+	"start_pref_e":	0.02,
+	"limit_pref_e":	2,
+	"start_pref_f":	1000,
+	"limit_pref_f":	1,
+	"start_pref_v":	0,
+	"limit_pref_v":	0,
+	"_comment":	" that's all"
+    },
+
+    "training" : {
+	"training_data": {
+	    "systems":		["./cu.bcc.02x02x02/02.md/sys-0016/deepmd", 
+				 "./cu.hcp.02x02x02/02.md/sys-0016/deepmd",
+				 "./cu.bcc.02x02x02/02.md/sys-0016/deepmd",
+				 "./cu.fcc.02x02x02.high_pressure/02.md/sys-0032/deepmd",
+				 "./cu.hcp.02x02x02.high_pressure/02.md/sys-0016/deepmd",
+				 "./cu.bcc.02x02x02.high_pressure/02.md/sys-0016/deepmd"],
+	    "batch_size":	[1,2,2,1,2,2],
+	    "_comment":		"that's all"
+	},
+	"numb_steps":	1000000,
+	"seed":		98563835,
+	"disp_file":	"lcurve.out",
+	"disp_freq":	2000,
+	"save_freq":	2000,
+	"profiling":    false,
+        "profiling_file":"out_prof.json",
+	"_comment":	"that's all"
+    },    
+
+    "_comment":		"that's all"
+}
+
