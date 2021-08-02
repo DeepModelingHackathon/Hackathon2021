@@ -16,7 +16,7 @@
 **7月28日** PaddlePaddle使用指导与赛题介绍<br>
 
 ## 直播录屏&PPT
-**点击下载**: [code:683b](https://pan.baidu.com/s/16EAp-jBqO6pB2VysB-IVNA)
+**[点击下载](https://pan.baidu.com/s/16EAp-jBqO6pB2VysB-IVNA)**(code:683b)
 
 ## 比赛日程
 ### 赛前准备阶段（8月15日之前）
@@ -79,14 +79,11 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 1.***Model interpretability*** is a crucial property for machine learning, which is also challenging for researchers.
 
-2.Plenty of efforts have been made to develop Explainable Artificial Intelligence (XAI, see a review in [https://doi.org/10.1016/j.inffus.2019.12.012](https://doi.org/10.1016/j.inffus.2019.12.012) ), such as:
->ICE ([https://www.tandfonline.com/doi/full/10.1080/10618600.2014.907095](https://www.tandfonline.com/doi/full/10.1080/10618600.2014.907095) )
-
->LIME ([https://dl.acm.org/doi/10.1145/2939672.2939778](https://dl.acm.org/doi/10.1145/2939672.2939778) ),
-
->SHAP ([https://proceedings.neurips.cc/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html](https://proceedings.neurips.cc/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html) ),
-
->RETAIN ([https://proceedings.neurips.cc/paper/2016/hash/231141b34c82aa95e48810a9d1b33a79-Abstract.html](https://proceedings.neurips.cc/paper/2016/hash/231141b34c82aa95e48810a9d1b33a79-Abstract.html) )
+2.Plenty of efforts have been made to develop Explainable Artificial Intelligence (XAI, see a review in [here](https://doi.org/10.1016/j.inffus.2019.12.012) ), such as:
+>[ICE](https://www.tandfonline.com/doi/full/10.1080/10618600.2014.907095),
+[LIME](https://dl.acm.org/doi/10.1145/2939672.2939778),
+[SHAP](https://proceedings.neurips.cc/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html),
+[RETAIN](https://proceedings.neurips.cc/paper/2016/hash/231141b34c82aa95e48810a9d1b33a79-Abstract.html)...
 
 3.**Descriptors in DeePMD-kit** contain the environment information of each central atom, and are fed into fitting network to obtain the final output. The interpretability of these descriptors remains no more investigation, which is open to all kinds of responsible explanation.
 
@@ -98,7 +95,7 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 
 (1)set `descriptor` as `se_a` and train **100w steps** on 6 copper systems as a whole training set, then make analysis for **6 given systems** (it will take hours to train, so it’s better to start up early);
 
-(2)add `type_one_side` = `Fasle` of descriptor parameters in input.json, an example is provided here: [input.json](A1/input.json), feel free to change other training parameters.
+(2)add `type_one_side` = `Fasle` of descriptor parameters in input.json, an example is provided here: [input.json](https://pan.baidu.com/s/14g6F5fz1SAqZbqeDwi-4ug)(code:fwpn), feel free to change other training parameters.
 
 #### Possible solution:
 
@@ -109,7 +106,7 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 3.Feel free to do other relevant analysis and get the bonus score.
 
 4.**PaddlePaddle** provides various tools convenient for analysis and Interpretation:
->Interpretation [https://github.com/PaddlePaddle/InterpretDL](https://github.com/PaddlePaddle/InterpretDL)
+>[Interpretation](https://github.com/PaddlePaddle/InterpretDL)
 
 In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 
@@ -117,7 +114,7 @@ In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `hackathon2021` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `hackathon2021` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
 
 #### Dataset&Materials:
-1.Copper systems in different crystal structures: [code:4m44](https://pan.baidu.com/s/19CBKaN-ZEidWc3mChAYJlg).
+1.Copper systems in different crystal structures: [Cu_full.zip](https://pan.baidu.com/s/1xYSwJ6YCSK17qosPJNpqDQ)(code:cwur).
 
 #### Scoring point:
 1.The rationality and completeness of the analysis.
@@ -156,9 +153,9 @@ A zip file which contains:
 3.You can use quantization、knowledge distillation、low-rank factorization or PCA and so on to do model compression; 
 
 4.**PaddlePaddle** provides various tools convenient for analysis and model compression:
->Interpretation https://github.com/PaddlePaddle/InterpretDL 
+>[Interpretation](https://github.com/PaddlePaddle/InterpretDL)
 
->Model compression https://github.com/PaddlePaddle/PaddleSlim 
+>[Model compression](https://github.com/PaddlePaddle/PaddleSlim)
 
 In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 
@@ -168,7 +165,7 @@ You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instru
 #### Dataset&Materials:
 1.Small dataset: water example contained in `example/water/data`, you can also download from [here](https://github.com/deepmodeling/deepmd-kit/tree/devel/examples/water/data);
 
-2.Challenge dataset: Cu system: [code:ifvk](https://pan.baidu.com/s/1QBP1CyshrnBV8UiKGQnSGw) (which is one of the six systems of dataset in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)), and an example input.json is provided here: [input.json](A1/input.json) (which is the same as in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)).
+2.Challenge dataset: Cu system: [cu.hcp.02x02x02.zip](https://pan.baidu.com/s/1d6wVme_5Om6hAyO8d8TGsg)(code:4c21) (which is one of the six systems of dataset in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)), and an example input.json is provided here: [input.json](https://pan.baidu.com/s/14g6F5fz1SAqZbqeDwi-4ug)(code:fwpn)(which is the same as in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)).
 
 #### Scoring point:
 1.The rationality and completeness of the analysis.
@@ -212,7 +209,7 @@ You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instru
 #### Dataset&Materials:
 1.Small dataset: water example contained in `example/water/data`, you can also download from [here](https://github.com/deepmodeling/deepmd-kit/tree/devel/examples/water/data);
 
-2.Challenge dataset: Cu system: [code:ifvk](https://pan.baidu.com/s/1QBP1CyshrnBV8UiKGQnSGw) (which is one of the six systems of dataset in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)), and an example input.json is provided here: [input.json](A1/input.json) (which is the same as in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)).
+2.Challenge dataset: Cu system: [cu.hcp.02x02x02.zip](https://pan.baidu.com/s/1d6wVme_5Om6hAyO8d8TGsg)(code:4c21)  (which is one of the six systems of dataset in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)), and an example input.json is provided here: [input.json](https://pan.baidu.com/s/14g6F5fz1SAqZbqeDwi-4ug)(code:fwpn) (which is the same as in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)).
 #### Scoring point:
 1.The effectiveness and correctness of the NAS procedure;
 
@@ -251,7 +248,7 @@ You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instru
 #### Dataset&Materials:
 1.Small dataset: water example contained in `example/water/data`, you can also download from [here](https://github.com/deepmodeling/deepmd-kit/tree/devel/examples/water/data);
 
-2.Challenge dataset: Cu system: [code:ifvk](https://pan.baidu.com/s/1QBP1CyshrnBV8UiKGQnSGw) (which is one of the six systems of dataset in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)), and an example input.json is provided here: [input.json](A1/input.json) (which is the same as in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)).
+2.Challenge dataset: Cu system: [cu.hcp.02x02x02.zip](https://pan.baidu.com/s/1d6wVme_5Om6hAyO8d8TGsg)(code:4c21) (which is one of the six systems of dataset in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)), and an example input.json is provided here: [input.json](https://pan.baidu.com/s/14g6F5fz1SAqZbqeDwi-4ug)(code:fwpn) (which is the same as in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)).
 
 #### Scoring point:
 1.The correctness and efficiency of the training boosting ;
@@ -285,9 +282,9 @@ A zip file which contains:
 You can see [here](https://github.com/deepmodeling/abacus-develop/tree/hackathon2021) for coding instruction, and `hackathon2021` branch is where you accomplish this project. The code to be edited might mainly lies in `abacus-develop/source/module_neighbor` in `hackathon2021` branch. Be aware of **online tutorial of ABACUS** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose ABACUS relevant projects. 
 
 #### Dataset&Materials:
-1.Small dataset: example dataset in code package: `abacus-develop/tests/501_NO_neighboring_GaAs512/`, you can also download here: [501_NO_neighboring_GaAs512.zip](H2/501_NO_neighboring_GaAs512.zip).
+1.Small dataset: example dataset in code package: `abacus-develop/tests/501_NO_neighboring_GaAs512/`, you can also download here: [501_NO_neighboring_GaAs512.zip](https://pan.baidu.com/s/1rS3KQltbc--YCItdlKe1Pg)(code:8vvm).
 
-2.Challenge dataset: C262144-neighbor, download here: [C262144-neighbor.zip](H2/C262144-neighbor.zip).
+2.Challenge dataset: C262144-neighbor, download here: [C262144-neighbor.zip](https://pan.baidu.com/s/1nX18NCujChFx5b1nOKX6Kg)(code:n0q1).
 
 #### Scoring point:
 1.The correctness of the implementation;
@@ -311,14 +308,14 @@ A zip file which contains:
 
 2.At present, **FEALPy** uses the einsum function in Numpy to get the element matrices,but this function does not support multi-core calculation. As a result, FEALPy can not make full use of the computer’s  multi-core computing resources in this step.
 #### Goal:
-Please see the code in [construct_stiff_matrix.py](H3/construct_stiff_matrix.py), design and develop a special **multi-core version** function to replace the **einsum function**.
+Please see the code in [construct_stiff_matrix.py](https://pan.baidu.com/s/1yMaG_YsNTDHhMm7mBQvj4g)(code:07q1), design and develop a special **multi-core version** function to replace the **einsum function**.
 #### Possible solution
 One can find some detailed discussion in the following paper:
 
 >Luporini F, Varbanescu A L, Rathgeber F, et al. Cross-loop optimization of arithmetic intensity for finite element local assembly[J]. ACM Transactions on Architecture and Code Optimization (TACO), 2015, 11(4): 1-25.
 
 #### Get Start: 
-Please see the [install.md](H3/install.md) file for installation FEALPy on your system. See [here](https://github.com/deepmodeling/fealpy) for coding instruction, and `master` branch is where you accomplish this project. Be aware of **online tutorial of FEALPy** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose FEALPy relevant projects.
+Please see the [install.md](https://pan.baidu.com/s/1FIwa7YXFwOQiZjII-fHx1w)(code:42ho) file for installation FEALPy on your system. See [here](https://github.com/deepmodeling/fealpy) for coding instruction, and `master` branch is where you accomplish this project. Be aware of **online tutorial of FEALPy** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose FEALPy relevant projects.
 
 #### Scoring point:
 1.The correctness of the implementation;
@@ -385,7 +382,7 @@ A zip file which contains:
 You can see [here](https://github.com/deepmodeling/abacus-develop/tree/hackathon2021) for coding instruction, and `hackathon2021` branch is where you accomplish this project. Be aware of **online tutorial of ABACUS** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose ABACUS relevant projects. 
 
 #### Dataset&Material:
-1.**An example** including input files and explanations for key parameters is provided: [example-Si-band.zip](S2/example-Si-band.zip) , which contains the first scf step and the second nscf step of Si-diamond band calculation.
+1.**An example** including input files and explanations for key parameters is provided: [example-Si-band.zip](https://pan.baidu.com/s/1zmdK_c3SdC3ikShgP-1_6w)(code:i2fs) , which contains the first scf step and the second nscf step of Si-diamond band calculation.
 
 2.The atomic structures and related information can be downloaded from the [Materials Project](https://www.materialsproject.org/), and there is an official API to get data from this database.
 
@@ -393,7 +390,7 @@ You can see [here](https://github.com/deepmodeling/abacus-develop/tree/hackathon
 
 4.You can download pseudopotential files [here](http://abacus.ustc.edu.cn/uploadfile/Libs/SG15_v1.0_Pseudopotential.zip).
 
-5.The goal 100 material examples are listed in [Material_IDs.txt](/S2/Material_IDs.txt), which you need to download from [Materials Project](https://www.materialsproject.org/) and compute with ABACUS.
+5.The goal 100 material examples are listed in [Material_IDs.txt](https://pan.baidu.com/s/1_zkBdmgw3ZlnfWWu-m-kCQ)(code:j1d9), which you need to download from [Materials Project](https://www.materialsproject.org/) and compute with ABACUS.
 
 #### Scoring point:
 1.The correctness of the implementation;
@@ -430,10 +427,10 @@ A zip file which contains:
 2.One can find the Bernstein basis based on barycentric coordinates in the follow paper:
 >Feng L, Alliez P, Busé L, et al. Curved optimal delaunay triangulation[J]. ACM Transactions on Graphics, 2018, 37(4): 16.
 
-3.Please see [here](S3/) for the specific code implementation requirements.
+3.Please see [S3_implementation](https://pan.baidu.com/s/1XDfPPjlv_TG6kjQO7rLw3A)(code:dkgl) and download files for the specific code implementation requirements.
 
 #### Get Start: 
-Please see the [install.md](H3/install.md) file for installation FEALPy on your system. See [here](https://github.com/deepmodeling/fealpy) for coding instruction, and `master` branch is where you accomplish this project. Be aware of **online tutorial of FEALPy** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose FEALPy relevant projects.
+Please see the [install.md](https://pan.baidu.com/s/1FIwa7YXFwOQiZjII-fHx1w)(code:42ho) file for installation FEALPy on your system. See [here](https://github.com/deepmodeling/fealpy) for coding instruction, and `master` branch is where you accomplish this project. Be aware of **online tutorial of FEALPy** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose FEALPy relevant projects.
 
 #### Scoring point:
 1.The correctness of the implementation;
