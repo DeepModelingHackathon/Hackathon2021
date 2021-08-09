@@ -18,6 +18,14 @@
 ## 直播录屏&PPT
 **[点击下载](https://pan.baidu.com/s/16EAp-jBqO6pB2VysB-IVNA)**(code:683b)
 
+## B站链接
+**[DeepModeling B站号](https://space.bilibili.com/626179751)**
+
+## 最新的比赛专用网站已公布：
+[https://hackathon.dp.tech/2021/summer-hackathon](https://hackathon.dp.tech/2021/summer-hackathon)（请用电脑浏览器打开，暂不支持移动端显示）
+
+## [Bonus 赛题已公布！](#Bonus题目)
+
 ## 比赛日程
 ### 赛前准备阶段（8月15日之前）
 
@@ -63,6 +71,14 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 #### [S2.ABACUS实现材料能带计算工作流](#S2-Workflows-for-ABACUSMaterials-Project-for-calculating-band-gaps)
 
 #### [S3.FEALPy实现基于Bernstein多项式的有限元方法](#S3-Finite-element-space-based-on-the-Bernstein-polynomial)
+
+### Bonus题目（编号B开头）
+
+#### [B1 / B2.上手DeePMD-kit](#B1--B2-Hands-on-DeePMD-kit)
+
+#### [B3.上手ABACUS](#B3-Hands-on-ABACUS)
+
+#### [B4.上手FEALPy](#B4-Hands-on-FEALPy)
 
 
 ### 注：题目细节要求及数据集已确定，后续可能只会有细微调整，如有问题欢迎在群里反馈
@@ -111,7 +127,7 @@ Bonus题目可选多道，不需要提前选定，可根据时间安排即答即
 In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 
 #### Get Start: 
-You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `hackathon2021` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `hackathon2021` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `hackathon2021` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `hackathon2021` branch. Be aware of **[online tutorial of DeePMD-kit](https://www.bilibili.com/video/BV1Gf4y157fM)** and **[online tutorial of PaddlePaddle](https://www.bilibili.com/video/BV1Yo4y1Q7pW)**, which are important for those who choose DeePMD-kit relevant projects. 
 
 #### Dataset&Materials:
 1.Copper systems in different crystal structures: [Cu_full.zip](https://pan.baidu.com/s/1xYSwJ6YCSK17qosPJNpqDQ)(code:cwur).
@@ -160,7 +176,7 @@ A zip file which contains:
 In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 
 #### Get Start: 
-You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `hackathon2021` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `hackathon2021` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `hackathon2021` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `hackathon2021` branch. Be aware of **[online tutorial of DeePMD-kit](https://www.bilibili.com/video/BV1Gf4y157fM)** and **[online tutorial of PaddlePaddle](https://www.bilibili.com/video/BV1Yo4y1Q7pW)**, which are important for those who choose DeePMD-kit relevant projects. 
 
 #### Dataset&Materials:
 1.Small dataset: water example contained in `example/water/data`, you can also download from [here](https://github.com/deepmodeling/deepmd-kit/tree/devel/examples/water/data);
@@ -198,13 +214,13 @@ A zip file which contains:
 2.For **Goal2**, in energy/force fitting (or you can simultaneously do both), you can use NAS to search for the best architectural building block on a small part of dataset and then transfer the best block architecture to a larger part, then train a new model. Finally, compare with standard trained DeePMD-kit on validation part.
 
 3.**PaddlePaddle** provides various tools convenient for NAS:
->Slim https://github.com/PaddlePaddle/PaddleSlim
+>[Slim](https://github.com/PaddlePaddle/PaddleSlim)
 
->NAS https://github.com/PaddlePaddle/PaddleSlim/blob/release/2.1.0/docs/zh_cn/quick_start/static/nas_tutorial.md 
+>[NAS](https://github.com/PaddlePaddle/PaddleSlim/blob/release/2.1.0/docs/zh_cn/quick_start/static/nas_tutorial.md)
 
 In addition, **if you choose PaddlePaddle, mentorship can be provided.**
 #### Get Start: 
-You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `hackathon2021` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `hackathon2021` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `hackathon2021` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `hackathon2021` branch. Be aware of **[online tutorial of DeePMD-kit](https://www.bilibili.com/video/BV1Gf4y157fM)** and **[online tutorial of PaddlePaddle](https://www.bilibili.com/video/BV1Yo4y1Q7pW)**, which are important for those who choose DeePMD-kit relevant projects. 
 
 #### Dataset&Materials:
 1.Small dataset: water example contained in `example/water/data`, you can also download from [here](https://github.com/deepmodeling/deepmd-kit/tree/devel/examples/water/data);
@@ -243,7 +259,7 @@ A zip file which contains:
 
 3.***Note***：To ensure the accuracy of semi-precision training, attention should be paid to gradient explosion and gradient vanishing. In addition, be careful about the matrix dimension in semi-precision Tensor Core.
 #### Get Start: 
-You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `hackathon2021` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `hackathon2021` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `hackathon2021` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `hackathon2021` branch. Be aware of **[online tutorial of DeePMD-kit](https://www.bilibili.com/video/BV1Gf4y157fM)**, which is important for those who choose DeePMD-kit relevant projects. 
 
 #### Dataset&Materials:
 1.Small dataset: water example contained in `example/water/data`, you can also download from [here](https://github.com/deepmodeling/deepmd-kit/tree/devel/examples/water/data);
@@ -279,7 +295,7 @@ A zip file which contains:
 1.Use **MPI, openMP or CUDA** to accelerate the efficiency of the code.
 
 #### Get Start: 
-You can see [here](https://github.com/deepmodeling/abacus-develop/tree/hackathon2021) for coding instruction, and `hackathon2021` branch is where you accomplish this project. The code to be edited might mainly lies in `abacus-develop/source/module_neighbor` in `hackathon2021` branch. Be aware of **online tutorial of ABACUS** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose ABACUS relevant projects. 
+You can see [here](https://github.com/deepmodeling/abacus-develop/tree/hackathon2021) for coding instruction, and `hackathon2021` branch is where you accomplish this project. The code to be edited might mainly lies in `abacus-develop/source/module_neighbor` in `hackathon2021` branch. Be aware of **[online tutorial of ABACUS](https://www.bilibili.com/video/BV1gM4y1T7Xz)**, which is important for those who choose ABACUS relevant projects. 
 
 #### Dataset&Materials:
 1.Small dataset: example dataset in code package: `abacus-develop/tests/501_NO_neighboring_GaAs512/`, you can also download here: [501_NO_neighboring_GaAs512.zip](https://pan.baidu.com/s/1rS3KQltbc--YCItdlKe1Pg)(code:8vvm).
@@ -315,7 +331,7 @@ One can find some detailed discussion in the following paper:
 >Luporini F, Varbanescu A L, Rathgeber F, et al. Cross-loop optimization of arithmetic intensity for finite element local assembly[J]. ACM Transactions on Architecture and Code Optimization (TACO), 2015, 11(4): 1-25.
 
 #### Get Start: 
-Please see the [install.md](https://pan.baidu.com/s/1FIwa7YXFwOQiZjII-fHx1w)(code:42ho) file for installation FEALPy on your system. See [here](https://github.com/deepmodeling/fealpy) for coding instruction, and `master` branch is where you accomplish this project. Be aware of **online tutorial of FEALPy** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose FEALPy relevant projects.
+Please see the [install.md](https://pan.baidu.com/s/1FIwa7YXFwOQiZjII-fHx1w)(code:42ho) file for installation FEALPy on your system. See [here](https://github.com/deepmodeling/fealpy) for coding instruction, and `hackathon2021` branch is where you accomplish this project. Be aware of **[online tutorial of FEALPy](https://www.bilibili.com/video/BV1hh411z7zT)**, which is important for those who choose FEALPy relevant projects.
 
 #### Scoring point:
 1.The correctness of the implementation;
@@ -351,7 +367,7 @@ Develop good workflows for large-scale and computationally-intensive tasks, whic
 #### Possible solution：
 Design and develop a workflow using Apache airflow or aiida, or other workflow management tools. One may take dpti (https://github.com/deepmodeling/dpti ) as an example. 
 #### Get Start: 
-You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `hackathon2021` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `hackathon2021` branch. Be aware of **online tutorial of DeePMD-kit** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose DeePMD-kit relevant projects. 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `hackathon2021` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `hackathon2021` branch. Be aware of **[online tutorial of DeePMD-kit](https://www.bilibili.com/video/BV1Gf4y157fM)** and **[online tutorial of Workflow](https://www.bilibili.com/video/BV18v411E7Sk)**, which are important for those who choose DeePMD-kit relevant projects. 
 
 #### Scoring point:
 1.The correctness of the implementation;
@@ -379,7 +395,7 @@ A zip file which contains:
 2.Make sure that the workflow code has good **universality** for other materials.
 
 #### Get started: 
-You can see [here](https://github.com/deepmodeling/abacus-develop/tree/hackathon2021) for coding instruction, and `hackathon2021` branch is where you accomplish this project. Be aware of **online tutorial of ABACUS** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose ABACUS relevant projects. 
+You can see [here](https://github.com/deepmodeling/abacus-develop/tree/hackathon2021) for coding instruction, and `hackathon2021` branch is where you accomplish this project. Be aware of **[online tutorial of ABACUS](https://www.bilibili.com/video/BV1gM4y1T7Xz)**, which is important for those who choose ABACUS relevant projects. 
 
 #### Dataset&Material:
 1.**An example** including input files and explanations for key parameters is provided: [example-Si-band.zip](https://pan.baidu.com/s/1zmdK_c3SdC3ikShgP-1_6w)(code:i2fs) , which contains the first scf step and the second nscf step of Si-diamond band calculation.
@@ -430,7 +446,7 @@ A zip file which contains:
 3.Please see [S3_implementation](https://pan.baidu.com/s/1XDfPPjlv_TG6kjQO7rLw3A)(code:dkgl) and download files for the specific code implementation requirements.
 
 #### Get Start: 
-Please see the [install.md](https://pan.baidu.com/s/1FIwa7YXFwOQiZjII-fHx1w)(code:42ho) file for installation FEALPy on your system. See [here](https://github.com/deepmodeling/fealpy) for coding instruction, and `master` branch is where you accomplish this project. Be aware of **online tutorial of FEALPy** coming soon, and we will inform you in the **wechat group** one week before the talk, which is important for those who choose FEALPy relevant projects.
+Please see the [install.md](https://pan.baidu.com/s/1FIwa7YXFwOQiZjII-fHx1w)(code:42ho) file for installation FEALPy on your system. See [here](https://github.com/deepmodeling/fealpy) for coding instruction, and `hackathon2021` branch is where you accomplish this project. Be aware of **[online tutorial of FEALPy](https://www.bilibili.com/video/BV1hh411z7zT)**, which is important for those who choose FEALPy relevant projects.
 
 #### Scoring point:
 1.The correctness of the implementation;
@@ -442,9 +458,93 @@ A zip file which contains:
 1.a report detailing the process of the experiment;
 
 2.a copy of code that can run directly.
+<br>
+<br>
+## Bonus题目
 
+### B1 / B2. Hands on DeePMD-kit
+#### Background&Problem:
+**DeePMD-kit** is a package written in Python/C++, designed to minimize the effort required to build deep learning based model of interatomic potential energy and force field and to perform **molecular dynamics (MD)**. This brings new hopes to addressing the accuracy-versus-efficiency dilemma in molecular simulations.
+#### Goal: 
+Find **better training parameters and strategies** than the given input script.
+#### Possible solution：
+1.Follow the tutorial and train a model for only **10w steps** to predict the energy、force of given systems.<br>
+2.Change training parameters or strategies in the input.json such that the learning curve in **lcurve.out** drops faster than that in the original one, especially the **training loss in the first 1w steps**.<br>
+3.Use some **plot tools** to show the difference before and after the change.<br>
+4.You can choose DeepMD-kit based on **Tensorflow (B1)** or based on **PadddlePaddle (B2)**.<br>
+#### Get Start: 
+You can see [here](https://github.com/deepmodeling/deepmd-kit) for coding instruction, and `hackathon2021` branch is where you accomplish this project. You might be able to get the descriptors mainly around `deepmd-kit/deepmd/descriptor` in `hackathon2021` branch. Be aware of **[online tutorial of DeePMD-kit](https://www.bilibili.com/video/BV1Gf4y157fM)** and **[online tutorial of PaddlePaddle](https://www.bilibili.com/video/BV1Yo4y1Q7pW)**, which are important for those who choose DeePMD-kit relevant projects. 
+
+#### Dataset&Materials:
+Dataset: Cu system: [cu.hcp.02x02x02.zip](https://pan.baidu.com/s/1d6wVme_5Om6hAyO8d8TGsg)(code:4c21) (which is one of the six systems of dataset in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)), and an example input.json is provided here: [input.json](https://pan.baidu.com/s/14g6F5fz1SAqZbqeDwi-4ug)(code:fwpn)(which is the same as in [A1](#a1-interpretability-of-descriptors-in-deepmd-kit)).
+
+#### Scoring point:
+1.The correctness of the implementation;
+
+#### Submit:
+A zip file which contains:<br>
+1.a report showing the results with a brief analysis.<br>
+2.input scripts and trained models both before and after the change.
+<br>
+<br>
+### B3. Hands on ABACUS
+#### Background&Problem:
+**ABACUS** is an electronic structure package based on **density functional theory (DFT)**. ABACUS adopts either plane wave basis or numerical atomic orbitals.
+
+#### Goal: 
+Please complete **2 of 4** calculations in the following designated physical properties with ABACUS software:<br>
+1.Draw **electronic bands of GaAs crystal**. Do self-consistent calculation first and do non-self-consistent calculation next with high symmetry K line.<br>
+2.Find **bond length of N dimer**. Spin polarization should be considered, and using two N atoms in large cell to simulate dimer, you can use energy fitting or atomic relaxation method.<br>
+3.Do **molecular dynamics NVT simulation of Sn64 system**. Draw pair distribution function to verify your results.<br>
+4.Calculate the **optimal structure of Zn crystal** with ABACUS. You can use cell relaxation method.
+#### Possible solution：
+You can **design input parameters in INPUT, STRU and KPT files** by yourself **with provided pseudopotential and numerical orbital files** if needed. Plane wave base is recommended but feel free to try numerical orbital base.
+
+#### Get Start: 
+You can see [here](https://github.com/deepmodeling/abacus-develop/tree/hackathon2021) for coding instruction, and `hackathon2021` branch is where you accomplish this project. Be aware of **[online tutorial of ABACUS](https://www.bilibili.com/video/BV1gM4y1T7Xz)**, which is important for those who choose ABACUS relevant projects. 
+
+#### Dataset&Materials:
+Inputs of above 4 designated physical properties can be found in [ABACUS_B3](https://pan.baidu.com/s/1zuJYCHqG_dPQy6Oe5rWZKA)(code:vkhh).
+#### Scoring point:
+1.The correctness of the implementation;
+
+#### Submit:
+A zip file which contains:<br>
+1.a report showing the results with a brief analysis.<br>
+2.a copy of ABACUS input files.
+<br>
+<br>
+### B4. Hands on FEALPy
+#### Background&Problem:
+1.**FEALPy** is a Python package to **numerically solve PDEs**, but the example demos in FEALPy is far from comprehensive.<br>
+2.One can learn how to use FEALPy by reading and running the demo scripts in the `FEALPy/example` directory, such as:<br>
+PoissonFEMWithDirichletBC_example.py<br>
+PoissonFEMWithNeumannBC_example.py<br>
+PoissonFEMWithRobinBC_example.py<br>
+ConvectinDiffusionReactionFEMwithDirichletBC2d_example.py<br>
+
+#### Goal: 
+Add more examples into FEALPy.
+#### Possible solution：
+There are many demos in FEniCS Project, such as<br>
+(1)[Poisson equation with multiple subdomains](https://fenicsproject.org/olddocs/dolfin/1.4.0/python/demo/documented/subdomains-poisson/python/documentation.html#poisson-equation-with-multiple-subdomains)<br>
+(2)[Cahn-Hilliard equation](https://fenicsproject.org/olddocs/dolfin/1.4.0/python/demo/documented/cahn-hilliard/python/documentation.html#cahn-hilliard-equation)<br>
+Try to implement **one of the above two** examples based on FEALPy.
+
+#### Get Start: 
+Please see the [install.md](https://pan.baidu.com/s/1FIwa7YXFwOQiZjII-fHx1w)(code:42ho) file for installation FEALPy on your system. See [here](https://github.com/deepmodeling/fealpy) for coding instruction, and ` hackathon2021 ` branch is where you accomplish this project. Be aware of **[online tutorial of FEALPy](https://www.bilibili.com/video/BV1hh411z7zT)**, which is important for those who choose FEALPy relevant projects. Scoring point:
+
+#### Scoring point:
+1.The correctness of the implementation;
+
+#### Submit:
+A zip file which contains:<br>
+1.a report briefly introducing how you made it.<br>
+2.a copy of code file such as **PoissonEquationWithMultipleSubdomains_example.py** or **CahnHilliardEquation_example.py**, which can run directly.
+<br>
+<br>
 ## 其他信息
-### 报名问卷:
+### 报名问卷（已截止）:
 [点此填写](https://www.wjx.top/vj/toN7B3a.aspx)
 ### 提交proposal:
 [点此填写](https://www.wjx.top/vj/wbKckRf.aspx)
